@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi</li>
+   <!--item 2--> <li           class="fruta">Melão</li>
+   <!--item 3--> <li id="lip2" class="fruta">Pera</li>
+   <!--item 4--> <li id="lip3" class="fruta">Uva</li>
+   <!--item 5--> <li id="lip4" class="fruta">Maçã</li>
+   <!--item 6--> <li           class="churras">Carne</li>
+   <!--item 7--> <li           class="churras">Linguiça</li>
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+   </ol>
+   
+   <p>No exemplo apresentado, temos uma lista de itens onde diferentes regras CSS competem para definir a cor de cada um deles. O que determina qual regra será 
+    aplicada é a especificidade do seletor — ou seja, o quão “precisa” e “detalhada” a regra é ao identificar o elemento.
+    O primeiro item, “Abacaxi”, não possui classes nem atributos especiais, então é estilizado apenas pela regra genérica que aplica color: red a todos os. 
+    Como não há nenhuma regra mais específica, essa é a cor que prevalece.</p>
+    
+    <p>Os itens “Melão” e “Pera” têm tanto um id quanto a classe fruta, o que os torna alvos de múltiplas regras. 
+    No entanto, existe uma regra (Regra 6) que especifica diretamente seus ids (#lip1 e #lip2), o que torna essa regra mais específica do que a classe .fruta. 
+    Por isso, eles ficam com a cor azul.</p>
+    
+    <p>O item “Uva”, além de estar na mesma situação, é atingido por uma regra ainda mais específica (Regra 7), que combina o id com a classe (#lip3.fruta).
+    Como essa combinação é mais precisa que apenas o id, essa regra vence e define a cor laranja para o item.</p>
+    
+    <p>Já “Maçã” possui apenas a classe fruta, e não é mencionado em nenhuma regra com id, então a regra da classe .fruta prevalece, deixando o item com a cor cinza.</p>
+    
+    <p> O item “Carne” tem tanto id quanto a classe churras, e é atingido por várias regras. A mais específica de todas, no entanto, 
+    é uma que combina o seletor do elemento pai (ol) com li, id e a classe — isso garante a vitória da Regra 8, aplicando a cor roxa.</p>
+    
+    <p>“Linguiça” é semelhante, mas não está na Regra 8, então a regra mais específica que se aplica a ela é a que combina o id e a classe churras, resultando na cor preta.</p>
+    
+    <p>Por fim, “Pão de alho” possui id, classe e o atributo draggable="true", o que o faz coincidir com várias regras. 
+    Aparentemente, a que utiliza o atributo seria bem específica, mas ainda assim perde para a que contém id e classe combinados, 
+    fazendo com que a cor preta seja aplicada também aqui.</p>
+    
+    <p>Em resumo, o navegador sempre escolhe a regra mais específica entre todas as que se aplicam a um elemento. IDs vencem classes, e 
+    combinações de seletores tornam a regra ainda mais forte. Esse exercício mostra na prática como funciona essa hierarquia de especificidade no CSS.</p>
+</body>
+</html>

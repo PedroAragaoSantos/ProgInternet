@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo - Joana Barbosa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .sidebar {
+      background-color: #2c2f33;
+      color: white;
+      width: 300px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content {
+      padding: 40px;
+      flex-grow: 1;
+      overflow-y: auto;
+      background-color: #ffffff;
+    }
+
+    #dilma{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .job-period {
+      float: right;
+      font-style: italic;
+    }
+
+    ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+
+    em {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img id="dilma" src="imagens/dilma.png" alt=>
+    <div class="section">
+      <h3>Pessoal</h3>
+      <p><strong>Nome:</strong> Predidenta Dilma</p>
+      <p><strong>Endereço:</strong><br>Rua da Paz, 250<br>7100-012 Brasil</p>
+      <p><strong>Telefone:</strong><br>963000121</p>
+      <p><strong>Email:</strong><br>exemplojs@cvmaker.pt</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Dilma Roussef</h1>
+    <p>Nascida numa família da classe média alta, 
+        interessou-se pelo socialismo durante a juventude, 
+        logo após o Golpe Militar de 1964, 
+        ingressou então na luta armada de esquerda como membro 
+        do Comando de Libertação Nacional (COLINA) e, 
+        posteriormente, da Vanguarda Armada Revolucionária 
+        Palmares (VAR-Palmares) — ambas as organizações 
+        defendiam a luta armada contra a ditadura militar. 
+        Passou quase três anos em reclusão, de 1970 a 1972, 
+        primeiramente pelos militares da Operação Bandeirante
+         (OBAN), pelos quais foi torturada, e, posteriormente, 
+         pelo Departamento de Ordem Política e Social (DOPS).</p>
+    
+
+    <div class="section">
+      <h2>Experiência profissional</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Presidenta</span>
+          <span class="job-period">2014 - 2016</span>
+        </div>
+        <p><em>Brasilia, Brasil</em></p>
+        <ul>
+          <li>Impeachment</li>
+          <li>Nao cumpriu as promessas que fez</li>
+          <li>Arruinou as contas do Estado</li>
+          <li>Abandonou a matriz Economica</li>
+        </ul>
+      </div>
+
+     
+
+    </div>
+  </div>
+
+</body>
+</html>
