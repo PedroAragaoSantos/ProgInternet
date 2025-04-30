@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questao 1, 2 e 3</title>
+</head>
+<body>
+    <style> 
+     .container{
+        direction: flex;
+          flex-direction: row;
+          width: 50vh;
+          height: 50vh;
+         
+          
+  
+          
+      }
+      .exemplo{
+        display: flex;
+        border: 2px solid black;
+        width: 400px;
+        height: 250px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        
+       }
+       #circulo{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(53, 145, 0);
+        border-radius: 50%;
+       }
+       #quadrado{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        
+       }
+       </style>
+    <h2>ACESSO A UMA PAGINA WEB</h2>
+    <p>O acesso é repleto de etapas desde a URL até a visualização do site. Mas basicamente, o navegador faz a solicitação para o servidor usando o protocolo (http ou https); o servidor responde com os dados e o navegador interpreta exibindo-os.</p>
+
+    <h2>HTML É UMA LINGUAGEM DE PROGRAMAÇÃO?</h2>
+    <p>HTML não é uma linguagem de programação geral como CSS, Java e JavaScript. 
+        É uma linguagem de marcação.</p>
+
+    <h2>O QUE É CSS?</h2>
+    <p>CSS é usado para a estilização. Por exemplo:</p>
+
+    <div class="container">
+        <div class="exemplo">
+           <div id="circulo"></div>
+           <div id="quadrado"></div>
+
+           
+        </div>
+        <p>Criei uma classe "container" com uma classe "exemplo" dentro dela, e dentro da classe "exemplo" um circulo e um quadrado.
+            
+        </p>
+        <p>com o CSS eu ajustei a altura utilizando um "height" e a largura utilizando um "width". Para fazer o box apenas utilizei um border com cor preta.</p>
+        <p>ajustei as cores utilizando o "background-color.</p>
+        <p>ajustei as posiçoes utilizando o display flex</p>
+        <p>Para o alinhamento dos itens utilizei as especificaçoes do flex
+            "justify content" e "align-items".
+        </p>
+        <p>usei um space space-between para eles ficarem um em cada canto do box. 
+            Tambem usei um padding com 10 pixel para eles nao enconstarem nas bordas.
+        </p>
+</body>
+</html>
