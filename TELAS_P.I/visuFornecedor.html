@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela Fornecedores</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #58a0ce;
+        }
+
+        header {
+            background-color: #2f6b8a;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar {
+      background-color: #5a98c9;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+        .barraPesquisa {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .barraPesquisa input[type="text"] {
+            padding: 5px;
+            width: 350px;
+        }
+
+        .barraPesquisa button {
+            padding: 5px 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 2px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #edecec;
+        }
+
+        .vazio{
+            text-align: center;
+            padding: 20px;
+            color: #000000;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Visualizar</a>
+        <a href="#">Cadastrar</a>
+      </div>
+    
+    <header>
+        <div class="barraPesquisa">
+            <h2>FORNECEDORES</h2>
+            <button>Novo</button>
+            <input type="text" placeholder="Digite o nome do fornecedor">
+        </div>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Contato</th>
+                <th>Endereço</th>
+                <th>CNPJ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5" class="vazio">Não há conteúdo na tabela</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
