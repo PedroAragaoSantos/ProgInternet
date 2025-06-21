@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>O que é Java Script?</title>
+</head>
+<body>
+    <h1 id="Titulo">O que é Java Script?</h1>
+    <h2 id="pergA">Qual é a motivação para a criação do JavaScript?</h2>
+    <p id="RespostaA">Quando a web começou a ser popularizada nos anos 90, a falta de interatividade dos sites construidos com HTML por eles serem uma pagina estatica com algumas imagens. Assim pesquisadores e grandes corporações começaram a tentar adicionar mai interatividade para web, então Brendan Eich criou o JavaScript em 1995 quando foi contratado pela empresa NetScape para desenvolver uma linguagem Script que rodasse nos navegadores. Em 1997 a linguagem foi padronizada pelo ECMA-262 e permitiu que a linguagem possa ser utilizada de forma mais ampla e introperável.<br></p>
+    <h2 id="pergB">A diferença entre execução no navegador e no servidor.</h2>
+    <p id="RespB"> O código em execução no navegador é conhecido como client-side code e se preocupa principalmente em melhorar a aparência e o comportamento de uma página da web renderizada. Isso inclui selecionar e definir o estilo dos componentes da IU, criação de layouts, navegação, validação de formulário etc. Por outro lado, a programação do site do lado do servidor envolve principalmente a escolha de qual conteúdo é retornado ao navegador em resposta às solicitações. O código do lado do servidor lida com tarefas como validação de dados e solicitações enviadas, usando bancos de dados para armazenar e recuperar dados e enviar os dados corretos para o cliente conforme necessário.<br>
+    </p>
+    <h2 id="pergC">O conceito de sandbox no navegador.</h2>
+    <p id="RespC">Sandbox é uma máquina virtual isolada na qual códigos de software potencialmente inseguros podem ser executados sem afetar os recursos da rede ou os aplicativos locais.<br>
+    </p>
+    <h2 id="pergD">Objetos globais como document, console e alert.</h2>
+    <p id="RespD">Quando utilizando o navegador é possivel acessar uma aba de console na qual podemos ultilizar comandos como 'alert' que exibi uam mensagem de alerta, 'console.log' que imprime uma mensagem no console e o 'document.querySelector' que faz possivel selecionar uma parte do documento HTML e deixa você editar ele.</p>
+
+    <h1 id="tituloHora">Hora atual!</h1>
+    <p id="h"></p>
+    
+    <script>
+        console.log("Informática 6");
+        alert("Olha isso!");
+        let hora = new Date();
+        let horaAtual = hora.toLocaleTimeString();
+        document.getElementById("h").innerHTML= horaAtual;
+    </script>
+    
+</body>
+</html>
