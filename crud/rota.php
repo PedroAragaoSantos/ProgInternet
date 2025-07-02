@@ -1,9 +1,10 @@
 <?php
 
-include_once __DIR__.'./Conexao.php';
-include_once __DIR__.'./Usuario.php';
-include_once __DIR__.'./UsuarioDAO.php';
-include_once __DIR__.'./Controlador/AuthController.php';
+include_once __DIR__.'/modelo/Conexao.php';
+include_once __DIR__.'/modelo/Usuario.php';
+include_once __DIR__.'/modelo/UsuarioDAO.php';
+include_once __DIR__.'/controlador/AuthController.php';
+session_start();
 
 if (isset($_GET['rota'])){
     $rota=$_GET['rota'];
@@ -22,7 +23,8 @@ switch($rota){
         $auth -> login();
         break;
     case 'home':
-        require "home.php";
+       // require "home.php";
+        header("Location:home.php");
         break;
 
     default:
