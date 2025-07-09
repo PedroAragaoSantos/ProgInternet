@@ -1,16 +1,14 @@
-CREATE DATABASE IF NOT EXISTS crud;
-
-USE crud;
-
-CREATE TABLE IF NOT EXISTS usuarios(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome varchar(200),
+create database crud;
+use crud;
+create table if not exists usuarios(
+    id int auto_increment not null primary key,
+    nome varchar(200) not null,
     email varchar(200),
-    senha varchar(200)
+    senha varchar(200) not null
 );
 
-CREATE TABLE IF NOT EXISTS produtos(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome varchar(200),
+create table if not exists produtos(
+    id int auto_increment not null primary key,
+    nome varchar(200) not null,
     valor decimal(7,2)
 );
