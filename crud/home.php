@@ -5,7 +5,7 @@ session_start();
 if (isset($_SESSION['usr'])){
     header("Location:login.php");
 }
-echo $_SESSION['usr'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
