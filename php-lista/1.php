@@ -12,7 +12,7 @@
     // Este é um bloco PHP. Tudo aqui dentro será interpretado como código PHP.
 
     // Criamos uma variável chamada $nome e atribuímos o valor "João"
-    $nome = "João";
+    $nome = "Pedro";
 
     // Usamos echo para exibir texto HTML dinamicamente.
     // Aqui, estamos mostrando a mensagem com o nome dentro de um parágrafo <p>
