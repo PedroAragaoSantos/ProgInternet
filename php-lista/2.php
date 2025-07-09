@@ -2,7 +2,7 @@
 // Este é um código PHP, que é executado no servidor.
 
 // Vamos criar uma variável no PHP
-$nome = "João";
+$nome = "Pedro";
 
 // O servidor processa esse código e gera um HTML que será enviado para o navegador
 echo "<p>Olá, $nome! Este texto foi gerado pelo PHP no servidor.</p>";
